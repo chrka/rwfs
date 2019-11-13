@@ -140,7 +140,7 @@ X = np.random.uniform(-10, 10, size=(N_OBSERVATIONS, N_RELEVANT + N_NOISE))
 y = np.sum(X[:, :N_RELEVANT] * coeffs, axis=1)
 
 # Add some extra noise to everything
-y += np.random.normal(0, 10, size=N_OBSERVATIONS)
+y += np.random.normal(0, 10, size=y.shape)
 ```
 
 Let's use the linear regressor from scikit-learn, and then apply RWFS to the

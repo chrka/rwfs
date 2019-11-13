@@ -1,7 +1,9 @@
 # rwfs — Random Walk Feature Selection
 
 A quick experiment to see if its feasible to use simulated annealing for 
-feature selection.  Given an estimator, the process starts out with a random 
+feature selection.  
+
+Given an estimator, the process starts out with a random 
 selection of features to use, and then for each step, a feature is toggled on or 
 off at random.
 
